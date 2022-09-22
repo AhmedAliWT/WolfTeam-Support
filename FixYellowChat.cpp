@@ -46,8 +46,9 @@ void CGameServerShell::OnMessage(HCLIENT hSender, ILTMessage_Read *pMsg)
 	
 	switch (messageID)
 	{
-      case MID_PLAYER_MESSAGE:			HandlePlayerMessage				(hSender, pMsg);	break;  //comment that line that handles player message request from clients. id=106
+	//comment this line that handles player message request from clients. id=106
+        //case MID_PLAYER_MESSAGE:			HandlePlayerMessage				(hSender, pMsg);	break;  
   }
   
 }
-// after comminting if any player tried to use that id nothing will appears to other clients and the problem will be fixed.
+// after commenting if any player tried to use that id nothing will appears to other clients and the problem will be fixed.
